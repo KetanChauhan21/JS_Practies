@@ -57,7 +57,6 @@
 // const [first,second] = arr
 // console.log([first,second])
 
-
 // swap val
 // let a = 4;
 // let b = 3;
@@ -66,17 +65,48 @@
 
 // console.log([c, d]);
 
-
 // optional chaining
 
-const person = {
-  name:"good",
-  address:{
-    state:"Uttarpradesh",
-  }
-}
+// const person = {
+//   name:"good",
+//   address:{
+//     state:"Uttarpradesh",
+//   }
+// }
 
-const addressval = person.value?.state;
-const addressval1 = person.address?.state;
+// const addressval = person.value?.state;
+// const addressval1 = person.address?.state;
 
-console.log(addressval1)
+// console.log(addressval1)
+
+// var vs let vs const
+
+// if (true) {
+//   const a = 3;
+//   console.log(a);
+// }
+
+// console.log(a);
+
+// prime number
+
+// let a = 44;
+// let count = 0;
+
+// if (a <= 1) {
+//   console.log("it is not a prime number");
+// } else {
+//   for (let i = 1; i <= a; i++) {
+//     if (a % i == 0) {
+//       count++;
+//     }
+//   }
+
+//   if (count > 2) {
+//     console.log("It is not a Prime Number");
+//   } else {
+//     console.log("It is a Prime number");
+//   }
+// }
+
+
