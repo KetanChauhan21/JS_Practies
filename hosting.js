@@ -46,15 +46,109 @@
 // console.log(arr3)
 
 
-var c = 3;
-let k = 11;
+// var c = 3;
+// let k = 11;
 
-if(true){
-  console.log("sum")
-  let a = 43
-  var d = 1000
-  a++ 
-  console.log(a)
+// if(true){
+//   console.log("sum")
+//   let a = 43
+//   var d = 1000
+//   a++ 
+//   console.log(a)
+// }
+
+// console.log(c)
+
+
+// function a() {
+//   var one = 900
+//   function b() {
+//     var two = 100;
+//     function c() {
+//       console.log(one,two)
+//     }
+//   }
+// }
+
+// a()
+
+// function one(){
+//   var a = 4;
+//   function two(){
+//     console.log(a);
+//   }
+//   return two;
+// }
+
+
+// var closer = one();
+
+// closer()  
+
+
+// function outer(){
+//   var a = 43;
+//   return function inner(){
+//     console.log(a);
+//   }
+// }
+
+// const value = outer()
+// value()
+
+function outer() {
+  var e = 1000;
+  function inner() {
+    console.log(e)
+  }
+  return inner;
 }
 
-console.log(c)
+outer()()
+
+
+// map, filter , reduce
+
+// let arr = [3, 2, 1, 3, 1];
+
+// let arr2 = arr.map((num) => num * 3);
+// console.log(arr2)
+
+// const newfilter = arr.filter((num) => num > 1);
+
+// console.log(newfilter)
+
+// // return single element
+// let newreduce = arr.reduce((prev, curr) => curr = curr * prev)
+// console.log(arr)
+// console.log(newreduce)
+
+
+// Function Declaration
+
+function a() {
+  console.log("a called");
+}
+
+
+// Function Expression
+
+var b = function xyz() {
+  console.log(xyz);
+}
+
+// Anonymous Function
+var x = function () {
+  console.log("anonymous");
+};
+
+
+// named Function Expression
+
+var b = function xyz() { ... }
+
+
+/*
+In JavaScript, functions are first-class citizens because they can be assigned to variables, 
+passed as arguments, returned from functions, and stored in data structures.
+ */
