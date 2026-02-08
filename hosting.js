@@ -96,15 +96,15 @@
 // const value = outer()
 // value()
 
-function outer() {
-  var e = 1000;
-  function inner() {
-    console.log(e)
-  }
-  return inner;
-}
+// function outer() {
+//   var e = 1000;
+//   function inner() {
+//     console.log(e)
+//   }
+//   return inner;
+// }
 
-outer()()
+// outer()()
 
 
 // map, filter , reduce
@@ -126,29 +126,50 @@ outer()()
 
 // Function Declaration
 
-function a() {
-  console.log("a called");
-}
+// function a() {
+//   console.log("a called");
+// }
 
 
 // Function Expression
 
-var b = function xyz() {
-  console.log(xyz);
-}
+// var b = function xyz() {
+//   console.log(xyz);
+// }
 
 // Anonymous Function
-var x = function () {
-  console.log("anonymous");
-};
+// var x = function () {
+//   console.log("anonymous");
+// };
 
 
 // named Function Expression
 
-var b = function xyz() { ... }
+// var b = function xyz() { console.log("good kapil") }
 
 
 /*
 In JavaScript, functions are first-class citizens because they can be assigned to variables, 
 passed as arguments, returned from functions, and stored in data structures.
  */
+
+// function call(params) {
+//   for (let i = 0; i < 6; i++) {
+//     function close(x) {
+//       setTimeout(() => {
+//         console.log(x);
+//       }, x * 1000)
+//     }
+//     close(i)
+//   }
+//   console.log("value is")
+// }
+
+// call()
+
+
+// setTimeout
+
+setTimeout(()=>{
+
+},1000)
