@@ -1,14 +1,11 @@
-import SetCounter from './Components/SetCounter'
-import Showdata from './Components/Showdata'
-import UseMemor from './Components/UseMemor'
+import Login_Registration from "./Components/Login_Registration"
+
 
 function App() {
 
   return (
     <>
-      <Showdata />
-      {/* <SetCounter /> */}
-      <UseMemor/>
+      <Login_Registration />
     </>
   )
 }

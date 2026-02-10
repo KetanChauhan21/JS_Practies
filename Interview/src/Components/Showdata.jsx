@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 const Showdata = () => {
     const [userdata, setuserData] = useState([]);
     const [Error, setError] = useState(null)
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(res => res.json())
-            .then((data) => { setuserData(data); console.log("data is:", data) })
-            .catch((err) => setError(err.message));
-    }, [])
+        axios.get("https://jsonplaceholder.typicode.com/users")
+            .then((res) => setuserData(res.data))
+            .catch((err) => setError(err))
+    })
     return (
         <>
             <div>
