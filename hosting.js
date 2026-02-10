@@ -170,6 +170,9 @@ passed as arguments, returned from functions, and stored in data structures.
 
 // setTimeout
 
-setTimeout(()=>{
+console.log("Start")
 
-},1000)
+setTimeout(()=>{
+    console.log("Async is here")
+},2000)
+console.log("End")
