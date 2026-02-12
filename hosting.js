@@ -16,11 +16,9 @@
 // var first = add(2);
 // var second = add(4);
 
-
 // console.log(b)
 // let a = 3
 // var b = 100
-
 
 // const arr = [11,2,3,1]
 
@@ -40,11 +38,9 @@
 // console.log(typeof arr2)
 // console.log(typeof arr3)
 
-
 // console.log(arr1)
 // console.log(arr2)
 // console.log(arr3)
-
 
 // var c = 3;
 // let k = 11;
@@ -53,12 +49,11 @@
 //   console.log("sum")
 //   let a = 43
 //   var d = 1000
-//   a++ 
+//   a++
 //   console.log(a)
 // }
 
 // console.log(c)
-
 
 // function a() {
 //   var one = 900
@@ -80,11 +75,9 @@
 //   return two;
 // }
 
-
 // var closer = one();
 
-// closer()  
-
+// closer()
 
 // function outer(){
 //   var a = 43;
@@ -106,7 +99,6 @@
 
 // outer()()
 
-
 // map, filter , reduce
 
 // let arr = [3, 2, 1, 3, 1];
@@ -123,13 +115,11 @@
 // console.log(arr)
 // console.log(newreduce)
 
-
 // Function Declaration
 
 // function a() {
 //   console.log("a called");
 // }
-
 
 // Function Expression
 
@@ -142,11 +132,9 @@
 //   console.log("anonymous");
 // };
 
-
 // named Function Expression
 
 // var b = function xyz() { console.log("good kapil") }
-
 
 /*
 In JavaScript, functions are first-class citizens because they can be assigned to variables, 
@@ -167,12 +155,39 @@ passed as arguments, returned from functions, and stored in data structures.
 
 // call()
 
-
 // setTimeout
 
-console.log("Start")
+// console.log("Start")
 
-setTimeout(()=>{
-    console.log("Async is here")
-},2000)
-console.log("End")
+// setTimeout(()=>{
+//     console.log("Async is here")
+// },2000)
+// console.log("End")
+
+function CreateCounter(number) {
+  let counter = number;
+  const original = number;
+
+  return {
+    increment: function () {
+      return counter + 2;
+    },
+    decrement: function () {
+      return counter - 2;
+    },
+    getOriginal: function () {
+      return original;
+    },
+    getCurrent: function () {
+      return counter;
+    },
+  };
+}
+
+
+const val = CreateCounter(8);
+
+console.log(val.decrement())
+console.log(val.increment())
+console.log(val.getCurrent())
+console.log(val.getOriginal())
